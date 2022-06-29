@@ -1,6 +1,10 @@
 @import './variables';
 @import './mixins';
 
+button {
+    cursor: pointer;
+}
+
 .btn {
   display: inline-block;
   font-size: 18px;

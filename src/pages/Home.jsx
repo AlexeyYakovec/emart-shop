@@ -1,16 +1,19 @@
 import React from 'react';
+
+//components
 import Announcement from '../components/Announcement';
-import Navbar from '../components/Navbar';
+import Header from '../components/Header';
 import Slider from '../components/Slider';
+import Caregories from '../components/Caregories';
 
 function Home() {
   return (
     <>
       <Announcement />
       <div className='container'>
-        <Navbar />
+        <Header />
         <Slider />
-        Homepage
+        <Caregories />
       </div>
     </>
   );
