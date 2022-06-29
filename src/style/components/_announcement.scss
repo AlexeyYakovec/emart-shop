@@ -1,0 +1,12 @@
+.announcement{
+    height: 42px;
+    background-color: $orange;
+    padding: 4px 8px;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: $font-size-h6 - 3;
+}

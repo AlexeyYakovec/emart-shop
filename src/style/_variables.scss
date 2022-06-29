@@ -3,9 +3,20 @@ $background: #f2f2f2;
 $primary: #000;
 $--white-50: hsla(0, 0%, 100%, 0.5);
 $--white-10: hsla(0, 0%, 100%, 0.1);
+$orange:#ff9a51;
+
+$theme-color:$primary;
+$white-color:$background;
 
 //base style:-
 $html-font-size: 16px;
+
+//container
+$content-width: 1200px;
+$content-fluid-width: 1890px;
+$container-offset: 1.6rem;
+$container-width: calc(($content-width) + ($container-offset) * 2); 
+$container-fluid-width: calc(($content-fluid-width) + ($container-offset)*2); 
 
 //font-weight:-
 $font-weight-normal: normal;
