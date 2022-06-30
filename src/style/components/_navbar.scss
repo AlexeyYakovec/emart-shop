@@ -22,8 +22,9 @@
         }
     }
     &-language{
-        span{
-            cursor: pointer;
+        select{
+            border: none;
+            outline: none;
         }
     }
 

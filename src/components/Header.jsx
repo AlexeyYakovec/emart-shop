@@ -28,7 +28,12 @@ function Header() {
             LOGO.
           </a>
           <div className='navbar-language'>
-            <span>EN</span>
+            <select name='' id=''>
+              <option value='EN'>EN</option>
+              <option value='RU'>RU</option>
+              <option value='UK'>UK</option>
+            </select>
+            {/* <span>EN</span> */}
           </div>
         </div>
 
