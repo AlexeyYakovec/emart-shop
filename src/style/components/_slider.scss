@@ -1,0 +1,42 @@
+.carousel-wrapper{
+    padding: 0 50px;
+
+    img{
+        display: block;
+        width: 552px;
+        background-position: center;
+    }
+}
+
+.info-container{
+    flex: 1;
+    padding: 50px;
+    .info-title{
+        font-size: $font-size-h3;
+        line-height: 2rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+        text-transform: uppercase;
+    }
+    .info-desc{
+        font-size: $font-size-h6;
+        line-height: 1.4rem;
+        font-weight: 400;
+        opacity: 0.6;
+        margin-bottom: 1rem;
+    }
+    .info-btn{
+        background-color: transparent;
+        color: black;
+        cursor: pointer;
+        transition: 0.2s ease-in;
+        -webkit-transition: 0.2s ease-in;
+        -moz-transition: 0.2s ease-in;
+        -ms-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+}
+}

@@ -1,0 +1,50 @@
+// categories
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-around;
+   margin-top: $font-size-h1 * 2;
+   gap: 30px;
+   @include mobile{
+    flex-direction: column;
+    justify-content: center;
+   }
+}
+
+// categoryItem
+
+.categoryItem{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    &-img{
+        width: 360px;
+        height: 360px;
+        img{
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &-info{
+        padding-top: 18px;
+        padding-left: 18px;
+        h3{
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            font-weight: 400;
+        }
+        .categoryItem-btn{
+            border: none;
+            background-color: transparent;
+            color: black;
+            opacity: 0.6;
+            font-size: $font-size-h5;
+            &:hover{
+                border: none;
+            }
+        }
+    }
+}

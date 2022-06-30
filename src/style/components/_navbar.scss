@@ -1,0 +1,148 @@
+.navbar{
+    position: relative;
+    height: 75px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $font-size-h1 * 2; //48px
+    
+    .hamburger-react{
+        display: none;
+        @include mobile{
+            display: inline-block;
+        }
+    }
+
+    &-logo{
+        display: flex;
+        &-link{
+            margin-right: $font-size-h4;
+            font-size: $font-size-h4;
+        }
+    }
+    &-language{
+        span{
+            cursor: pointer;
+        }
+    }
+
+
+    &-nav{
+        @include mobile {
+            display: none;
+        }
+        .navbar-list{
+            display: flex;
+           &-item{
+            &:not(:last-child){
+                margin-right: 22px;
+            }
+                a{
+                    font-size: $font-size-h6;
+                    transition: 0.2s ease-in;
+                    -webkit-transition: 0.2s ease-in;
+                    -moz-transition: 0.2s ease-in;
+                    -ms-transition: 0.2s ease-in;
+                    -o-transition: 0.2s ease-in;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        background-color: rgb(139, 139, 139);
+                        opacity: 0;
+                        transition: 0.2s ease-out;
+                        -webkit-transition: 0.2s ease-out;
+                        -moz-transition: 0.2s ease-out;
+                        -ms-transition: 0.2s ease-out;
+                        -o-transition: 0.2s ease-out;
+                        transform: translateX(-200%);
+                        -webkit-transform: translateX(-200%);
+                        -moz-transform: translateX(-200%);
+                        -ms-transform: translateX(-200%);
+                        -o-transform: translateX(-200%);
+                    }
+                    &:hover::after{
+                        transform: translateX(0);
+                        -webkit-transform: translateX(0);
+                        -moz-transform: translateX(0);
+                        -ms-transform: translateX(0);
+                        -o-transform: translateX(0);
+                        opacity: 1;
+                    }
+                    &:hover{
+                        color: rgb(139, 139, 139);
+                    }
+
+                 }
+            }
+        }
+    }
+
+    &-actions{
+        display: flex;
+        align-items: center;
+        .actions-icon:not(:last-child){
+            margin-right: 16px;
+            @include mobile {
+                margin-right: 28px;
+            }
+        }
+        svg{
+            cursor: pointer;
+        }
+    }
+
+    &-search{
+        height: 100px;
+        width: 100%;
+        background-color: transparent;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        transform: translateX(-500%);
+        -webkit-transform: translateX(-500%);
+        -moz-transform: translateX(-500%);
+        -ms-transform: translateX(-500%);
+        -o-transform: translateX(-500%);
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -ms-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        &.active{
+            transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
+        }
+        
+        input{
+            border: 0;
+            outline: none;
+            margin: 28px 0 0 28px;
+            border: 1px solid rgb(211, 211, 211);
+            border-radius: 5px;
+            padding: 8px 16px 8px 32px;
+            width: 260px;
+            position: relative;
+            &::placeholder{
+                color: rgb(158, 158, 158);
+            }
+
+         }
+         .navbar-search-position{
+            position: relative;
+            svg{
+                position: absolute;
+                top: -24px;
+                left: 38px;
+            }
+         }
+}
+}
