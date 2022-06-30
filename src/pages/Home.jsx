@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Slider from '../components/Slider';
 import Caregories from '../components/Caregories';
 import Footer from '../components/Footer';
+import Products from '../components/Products';
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
         <Header />
         <Slider />
         <Caregories />
+        <Products />
         <Footer />
       </div>
     </>

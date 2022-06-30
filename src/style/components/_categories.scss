@@ -6,6 +6,10 @@
    justify-content: space-around;
    margin-top: $font-size-h1 * 2;
    gap: 30px;
+   @include mobile{
+    flex-direction: column;
+    justify-content: center;
+   }
 }
 
 // categoryItem

@@ -7,7 +7,7 @@ const Caregories = () => {
   return (
     <div className='categories'>
       {categories.map((item) => (
-        <CategoryItem item={item} />
+        <CategoryItem item={item} key={item.id} />
       ))}
     </div>
   );
