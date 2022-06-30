@@ -22,7 +22,7 @@ const dataSlide = [
 const Slider = () => {
   return (
     <div className='slider-container'>
-      <Carousel cols={1} rows={1} gap={5} loop>
+      <Carousel cols={1} rows={1} gap={5} loop={true} autoplay={5000}>
         {dataSlide.map(({ title, desc, img }) => (
           <Carousel.Item>
             <div className='carousel-wrapper flex'>
@@ -30,7 +30,7 @@ const Slider = () => {
               <div className='info-container'>
                 <h1 className='info-title'>{title}</h1>
                 <p className='info-desc'>{desc}</p>
-                <button className='btn-primary info-btn '>show now</button>
+                <button className='btn-primary info-btn '>SHOP NOW</button>
               </div>
             </div>
           </Carousel.Item>

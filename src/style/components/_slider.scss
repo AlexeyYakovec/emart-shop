@@ -13,9 +13,10 @@
     padding: 50px;
     .info-title{
         font-size: $font-size-h3;
-        line-height: 2.4rem;
+        line-height: 2rem;
         font-weight: 500;
         margin-bottom: 1.2rem;
+        text-transform: uppercase;
     }
     .info-desc{
         font-size: $font-size-h6;

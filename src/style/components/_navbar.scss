@@ -100,7 +100,7 @@
     &-search{
         height: 100px;
         width: 100%;
-        background-color: rgb(214, 214, 214);
+        background-color: transparent;
         position: absolute;
         top: 75px;
         left: 0;
@@ -126,7 +126,7 @@
             border: 0;
             outline: none;
             margin: 28px 0 0 28px;
-            border: 1px solid rgb(92, 92, 92);
+            border: 1px solid rgb(211, 211, 211);
             border-radius: 5px;
             padding: 8px 16px 8px 32px;
             width: 260px;
